@@ -1,0 +1,15 @@
+<%- contentFor('body') %>
+
+<h1>Notícias</h1>
+
+<% for (let i = 0; i < noticias.length; i++) {%>
+		<div>
+			<i><%= noticias[i].id %></i>
+			<h3>
+				<%= noticias[i].titulo %>
+			</h3>
+			<h5>
+				<%= noticias[i].noticia %>
+			</h5>
+		</div>
+<% } %>
